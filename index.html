@@ -1,0 +1,1211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>yeti-sans</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <link href="css/main.css" rel="stylesheet">
+  </head>
+  <body>
+    <header id="top" role="banner">
+      <div class="container">
+        <h1>yeti-sans</h1>
+      </div>
+    </header>
+    <div class="container">
+      <nav role="navigation" class="top-nav top-nav-light cf">
+        <input id="menu-toggle" type="checkbox" class="menu-toggle">
+        <label for="menu-toggle">Menu</label>
+        <ul class="list-unstyled list-inline cf">
+          <li><a href="#typography">Typography</a></li>
+          <li><a href="#grid">Grid</a></li>
+          <li><a href="#buttons">Buttons</a></li>
+          <li><a href="#forms">Forms</a></li>
+          <li><a href="#messages">Messages</a></li>
+          <li><a href="#tables">Tables</a></li>
+          <li><a href="#colors">Colors</a></li>
+          <li><a href="#navigation">Navigation</a></li>
+          <li><a href="#code">Code</a></li>
+          <li><a href="#media">Media </a></li>
+          <li><a href="#modals">Modals</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="container">
+      <section id="typography">
+        <h2>Typography</h2>
+        <h3>Body copy</h3>
+        <p>The default <code>font-size</code> is <strong>14px</strong> with <code>line-height</code> of <strong>1.5</strong>. Additionally all paragraphs get have a bottom margin of <code>30px</code> (the default spacing unit).</p><pre><code class="lang-html">  &lt;p&gt;...&lt;/p&gt;
+</code></pre>
+
+        <h3>Headings</h3>
+        <p>All HTML headings are available&mdash;running from <code>h1</code> to <code>h6</code>.</p>
+        <div class="sample">
+          <h1>Headline 1</h1>
+          <h2>Headline 2</h2>
+          <h3>Headline 3</h3>
+          <h4>Headline 4</h4>
+          <h5>Headline 5</h5>
+          <h6>Headline 6</h6>
+        </div>
+        <h4>Headings Usage</h4>
+        <dl>
+          <dt>Heading 1</dt>
+          <dd><code>h1</code> is a top-level header that should appear only once per page, usually within <code>header</code> area. It can be used as a container for logotypes.</dd>
+        </dl>
+        <dl>
+          <dt>Heading 2</dt>
+          <dd><code>h2</code> can be alternatively used as a top-level page header, optionally outside of <code>header</code>.</dd>
+        </dl>
+        <dl>
+          <dt>Heading 3</dt>
+          <dd><code>h3</code> is used to denotate sections on a page.</dd>
+        </dl>
+        <dl>
+          <dt>Heading 4, 5, 6</dt>
+          <dd><code>h4</code>, <code>h5</code>, <code>h6</code> are used for sub-sections on a page.</dd>
+        </dl>
+        <h3>Text manipulations</h3>
+        <p>Basic HTML inline text manipulations are supported.</p>
+        <div class="sample">
+          <ul class="list-unstyled">
+            <li>This text snippet will be <strong>bold</strong></li>
+            <li>This text snippet will be <em>emphasized</em></li>
+            <li>This text snippet will be <u>underlined</u></li>
+            <li>This text snippet will be <s>strikedthrough</s></li>
+            <li>This text snippet will be <small>small</small></li>
+            <li>This text snippet will be <sub>subscripted</sub></li>
+            <li>This text snippet will be <sup>superscripted</sup></li>
+            <li>This text snippet will be <abbr title='abbreviation'>abbreviated</abbr></li>
+            <li>This text snippet will be <mark>highlighted</mark></li>
+            <li>This text snippet will be an <code>inline code sample</code></li>
+          </ul>
+        </div><pre><code class="lang-html">  This text snippet will be &lt;strong&gt;bold&lt;/strong&gt;
+  This text snippet will be &lt;em&gt;emphasized&lt;/em&gt;
+  This text snippet will be &lt;u&gt;underlined&lt;/u&gt;
+  This text snippet will be &lt;s&gt;strikedthrough&lt;/s&gt;
+  This text snippet will be &lt;small&gt;small&lt;/small&gt;
+  This text snippet will be &lt;sub&gt;subscripted&lt;/sub&gt;
+  This text snippet will be &lt;sup&gt;superscripted&lt;/sup&gt;
+  This text snippet will be &lt;abbr title=&#39;abrreviation&#39;&gt;abbreviated&lt;/abbr&gt;
+  This text snippet will be &lt;mark&gt;highlighted&lt;/mark&gt;
+  This text snippet will be an &lt;code&gt;inline code sample&lt;/code&gt;
+</code></pre>
+
+        <h3>Blockquotes</h3>
+        <p>To quote an external source use a <code>blockquote</code> element.</p>
+        <blockquote>
+          <p>You are not your idea, and if you identify too closely with your ideas, you will take offense when they are challenged.</p>
+        </blockquote><pre><code class="lang-html">  &lt;blockquote&gt;
+    &lt;p&gt;You are not your idea, and if you identify too closely with your ideas, you will take offense when they are challenged.&lt;/p&gt;
+  &lt;/blockquote&gt;
+</code></pre>
+
+        <p>To add a source of the quote use the <code>footer</code> element.</p>
+        <blockquote>
+          <p>Failure isn’t a necessary evil. In fact, it isn’t evil at all. It is a necessary consequence of doing something new.</p>
+          <footer>Ed Catmull in <cite>Creativity, Inc.</cite></footer>
+        </blockquote><pre><code class="lang-html">  &lt;blockquote&gt;
+    &lt;p&gt;Failure isn’t a necessary evil. In fact, it isn’t evil at all. It is a necessary consequence of doing something new.&lt;/p&gt;
+    &lt;footer&gt;Ed Catmull in &lt;cite&gt;Creativity, Inc.&lt;/cite&gt;&lt;/footer&gt;
+  &lt;/blockquote&gt;
+</code></pre>
+
+        <p>To center a <code>blockquote</code> add <code>blockquote-centered</code> class.</p>
+        <blockquote class="blockquote-centered">
+          <p>Getting the right people and the right chemistry is more important than getting the right idea.</p>
+        </blockquote><pre><code class="lang-html">  &lt;blockquote class=&#39;blockquote-centered&#39;&gt;
+    &lt;p&gt;Getting the right people and the right chemistry is more important than getting the right idea.&lt;/p&gt;
+  &lt;/blockquote&gt;
+</code></pre>
+
+        <p>Blockquotes come with three different font sizes&mdash;<strong>base</strong>, <strong>medium</strong> and <strong>large</strong>. Use no class for base appearance.</p>
+        <blockquote class="blockquote-medium">
+          <p>“I like too many things and get all confused and hung-up running from one falling star to another till i drop. This is the night, what it does to you. I had nothing to offer anybody except my own confusion.”</p>
+        </blockquote>
+        <blockquote class="blockquote-large">
+          <p>“War is peace. Freedom is slavery. Ignorance is strength.”</p>
+        </blockquote><pre><code class="lang-html">  &lt;blockquote class=&#39;blockquote-medium&#39;&gt;
+    &lt;p&gt;“I like too many things and get all confused and hung-up running from one falling star to another till i drop. This is the night, what it does to you. I had nothing to offer anybody except my own confusion.”&lt;/p&gt;
+  &lt;/blockquote&gt;
+
+  &lt;blockquote class=&#39;blockquote-large&#39;&gt;
+    &lt;p&gt;“War is peace. Freedom is slavery. Ignorance is strength.”&lt;/p&gt;
+  &lt;/blockquote&gt;
+</code></pre>
+
+        <h3>Lists</h3>
+        <p>Both ordered and unordered lists can be customized with <code>list-unstyled</code> class, that will remove the <code>padding</code> as well as individual list item style and <code>list-inline</code> class, that will change the display of list items to <code>inline-block</code>.</p>
+        <h4>Unordered list</h4>
+        <p>An unordered list represents a collection of items that do not have any particular order.</p>
+        <ul>
+          <li>List element one</li>
+          <li>List element two
+            <ul>
+              <li>Nested list element one
+                <ul>
+                  <li>Nested list element one</li>
+                  <li>Nested list element two</li>
+                </ul>
+              </li>
+              <li>List element two</li>
+            </ul>
+          </li>
+          <li>List element three</li>
+          <li>List element four</li>
+        </ul><pre><code class="lang-html">  &lt;ul&gt;
+    &lt;li&gt;List element one&lt;/li&gt;
+    &lt;li&gt;List element two
+      &lt;ul&gt;
+        &lt;li&gt;Nested list element one
+          &lt;ul&gt;
+            &lt;li&gt;Nested list element one&lt;/li&gt;
+            &lt;li&gt;Nested list element two&lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/li&gt;
+        &lt;li&gt;Nested list element two&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;List element three&lt;/li&gt;
+    &lt;li&gt;List element four&lt;/li&gt;
+  &lt;/ul&gt;
+</code></pre>
+
+        <h4>Ordered list</h4>
+        <p>An ordered list represents a collection of items that do have order and will be displayed with a preceding number.</p>
+        <ol>
+          <li>List element one</li>
+          <li>List element two
+            <ol>
+              <li>Nested list element one</li>
+              <li>Nested list element two</li>
+            </ol>
+          </li>
+          <li>List element three</li>
+          <li>List element four</li>
+        </ol><pre><code class="lang-html">  &lt;ol&gt;
+    &lt;li&gt;List element one&lt;/li&gt;
+    &lt;li&gt;List element two
+      &lt;ol&gt;
+        &lt;li&gt;Nested list element one&lt;/li&gt;
+        &lt;li&gt;Nested list element two&lt;/li&gt;
+      &lt;/ol&gt;
+    &lt;/li&gt;
+    &lt;li&gt;List element three&lt;/li&gt;
+    &lt;li&gt;List element four&lt;/li&gt;
+  &lt;/ol&gt;
+</code></pre>
+
+        <h4>Definition list</h4>
+        <p>A definition list consists of pairs of terms and their descriptions.</p>
+        <dl>
+          <dt>Definition term</dt>
+          <dd>Definition description</dd>
+        </dl><pre><code class="lang-html">  &lt;dl&gt;
+    &lt;dt&gt;Definition term&lt;/dt&gt;
+    &lt;dd&gt;Definition description&lt;/dd&gt;
+  &lt;/dl&gt;
+</code></pre>
+
+      </section>
+      <section id="grid">
+        <h2>Grid</h2>
+        <p>The starting point to maintaining the document flow is by wrapping the content in a container element that adjusts its width according to resolution:</p><pre><code>  &lt;div class=&#39;container&#39;&gt;
+    &lt;h1&gt;My Website&lt;/h1&gt;
+    &lt;p&gt;My content.&lt;/p&gt;
+  &lt;/div&gt;
+</code></pre>
+        <p>The following container widths and breakpoints are defined in the <a href='https://github.com/andyet/yeticss/blob/gh-pages/lib/yeticss/globals/_variables.styl#L62-L75'>variables file</a>:</p><pre><code>  $grid-width-full    ?= 100%
+  $grid-width-desktop ?= 70%
+  $grid-width-tablet  ?= 85%
+  $grid-width-mobile  ?= 90%
+
+  $breakpoint-smartphone   ?= 480px
+  $breakpoint-mid-mobile   ?= 600px
+  $breakpoint-tablet       ?= 768px
+  $breakpoint-desktop      ?= 900px
+  $breakpoint-desktop-wide ?= 1200px
+</code></pre>
+        <p>Grid is built on top of <a href='http://css-tricks.com/snippets/css/a-guide-to-flexbox/'>flexbox</a>. Cells (<code>gf-cell</code>) will have the width of <code>100%</code> below <code>481px</code> and automatically calculated width (depending on cell count) above that breakpoint. Grid must be placed within <code>div</code> with <code>container</code> class as described above.</p>
+        <p>
+          Instead of relying on calculation of widths depending on number of cells,
+          you can use <code>w25</code>, <code>w33</code>,
+          <code>w50</code>, <code>w75</code> helper classes for 25%, 33%, 50% and 75% of <code>container</code> width.
+          The width of other cells will be calculated automatically by the browser.
+          
+        </p>
+        <div class="gf-row">
+          <div class="gf-cell w50 brd">
+            <p>1/2</p>
+          </div>
+          <div class="gf-cell brd">
+            <p>1/2 auto</p>
+          </div>
+        </div>
+        <div class="gf-row">
+          <div class="gf-cell brd">
+            <p>auto</p>
+          </div>
+          <div class="gf-cell w50 brd">
+            <p>1/2</p>
+          </div>
+        </div>
+        <div class="gf-row">
+          <div class="gf-cell brd">
+            <p>1/3 auto</p>
+          </div>
+          <div class="gf-cell brd">
+            <p>1/3 auto</p>
+          </div>
+          <div class="gf-cell brd">
+            <p>1/3 auto</p>
+          </div>
+        </div>
+        <div class="gf-row">
+          <div class="gf-cell brd">
+            <p>1/4 auto</p>
+          </div>
+          <div class="gf-cell brd">
+            <p>1/4 auto</p>
+          </div>
+          <div class="gf-cell brd">
+            <p>1/4 auto</p>
+          </div>
+          <div class="gf-cell brd">
+            <p>1/4 auto</p>
+          </div>
+        </div>
+        <div class="gf-row">
+          <div class="gf-cell brd">
+            <p>auto</p>
+          </div>
+          <div class="gf-cell w25 brd">
+            <p>1/4</p>
+          </div>
+        </div>
+        <div class="gf-row">
+          <div class="gf-cell brd">
+            <p>auto</p>
+          </div>
+          <div class="gf-cell w33 brd">
+            <p>1/3</p>
+          </div>
+        </div>
+        <div class="gf-row">
+          <div class="gf-cell brd">
+            <p>auto</p>
+          </div>
+          <aside class="w33 brd">
+            <p>1/3 aside</p>
+          </aside>
+        </div><pre><code class="lang-html">  &lt;div class=&#39;gf-row&#39;&gt;
+    &lt;div class=&#39;gf-cell&#39;&gt;
+      &lt;p&gt;1/2&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&#39;gf-cell&#39;&gt;
+      &lt;p&gt;1/2&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&#39;gf-row&#39;&gt;
+    &lt;div class=&#39;gf-cell&#39;&gt;
+      &lt;p&gt;1/3&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&#39;gf-cell&#39;&gt;
+      &lt;p&gt;1/3&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&#39;gf-cell&#39;&gt;
+      &lt;p&gt;1/3&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&#39;gf-row&#39;&gt;
+    &lt;div class=&#39;gf-cell&#39;&gt;
+      &lt;p&gt;1/4&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&#39;gf-cell&#39;&gt;
+      &lt;p&gt;1/4&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&#39;gf-cell&#39;&gt;
+      &lt;p&gt;1/4&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&#39;gf-cell&#39;&gt;
+      &lt;p&gt;1/4&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&#39;gf-row&#39;&gt;
+    &lt;div class=&#39;gf-cell&#39;&gt;
+      &lt;p&gt;auto&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&#39;gf-cell w25&#39;&gt;
+      &lt;p&gt;1/4&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&#39;gf-row&#39;&gt;
+    &lt;div class=&#39;gf-cell&#39;&gt;
+      &lt;p&gt;auto&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&#39;gf-cell w50&#39;&gt;
+      &lt;p&gt;1/2&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&#39;gf-row&#39;&gt;
+    &lt;div class=&#39;gf-cell&#39;&gt;
+      &lt;p&gt;auto&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&#39;gf-cell w33&#39;&gt;
+      &lt;p&gt;1/3&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+</code></pre>
+
+        <p>For simple, one-column layout use only <code>container</code> element.</p><pre><code class="lang-html">  &lt;div class=&#39;container&#39;&gt;
+    ...
+  &lt;/div&gt;
+</code></pre>
+
+      </section>
+      <section id="buttons">
+        <h2>Buttons</h2>
+        <p>
+          Use <code>btn</code> class inside &lt;a&gt; or &lt;button&gt; tags for default button appearance.
+          Add optional <code>btn-xxx</code> classes for customized color variants.
+          
+        </p>
+        <div class="gf-row space-bot buttons"><a class="btn">Default</a>
+          <button class="btn btn-approve">Approve</button><a class="btn btn-warn">Warning</a><a class="btn btn-neutral">Neutral</a>
+        </div>
+        <div class="gf-row space-bot buttons">
+          <button class="btn btn-outlined">Default Outlined</button>
+          <button class="btn btn-outlined-approve">Approve Outlined</button>
+          <button class="btn btn-outlined-warn">Warning Outlined</button>
+          <button class="btn btn-outlined-neutral">Neutral Outlined</button>
+        </div>
+        <div class="gf-row buttons">
+          <button class="btn btn-unstyled">Unstyled</button>
+          <button class="btn btn-caution">Unstyled Caution</button>
+        </div><pre><code class="lang-html">  &lt;a class=&#39;btn&#39;&gt;Default&lt;/a&gt;
+  &lt;button class=&#39;btn btn-approve&#39;&gt;Approve&lt;/button&gt;
+  &lt;a class=&#39;btn btn-warn&#39;&gt;Warning&lt;/a&gt;
+  &lt;a class=&#39;btn btn-neutral&#39;&gt;Neutral&lt;/a&gt;
+  &lt;a class=&#39;btn btn-outlined&#39;&gt;Default Outlined&lt;/a&gt;
+  &lt;a class=&#39;btn btn-outlined-approval&#39;&gt;Approval Outlined&lt;/a&gt;
+  &lt;a class=&#39;btn btn-outlined-warn&#39;&gt;Warning Outlined&lt;/a&gt;
+  &lt;a class=&#39;btn btn-outlined-neutral&#39;&gt;Neutral Outlined&lt;/a&gt;
+  &lt;a class=&#39;btn btn-unstyled&#39;&gt;Unstyled&lt;/a&gt;
+  &lt;a class=&#39;btn btn-caution&#39;&gt;Unstyled Caution&lt;/a&gt;
+</code></pre>
+
+        <h3>Button sizes</h3>
+        <p>Buttons come in three different sizes&mdash;large, regular and small. Use <code>btn-large</code>, no class and <code>btn-small</code> classes respectively.</p><a href="" class="btn btn-large">Large Button</a><a href="" class="btn">Regular Button</a><a href="" class="btn btn-small">Small Button</a><pre><code class="lang-html">  &lt;a class=&#39;btn btn-large&#39;&gt;Large Button&lt;/a&gt;
+  &lt;a class=&#39;btn&#39;&gt;Regular Button&lt;/a&gt;
+  &lt;a class=&#39;btn btn-small&#39;&gt;Small Button&lt;/a&gt;
+</code></pre>
+
+        <h3>Disabled buttons</h3>
+        <p>For disabled (unclickable) apperance use <code>disabled</code> attribute for <code>btn</code> elements and <code>btn-disabled</code> class for links.</p>
+        <div class="gf-row space-bot buttons">
+          <button disabled class="btn">Default</button>
+          <button disabled class="btn btn-approve">Approval</button><a disabled class="btn btn-warn btn-disabled">Warning</a>
+          <button disabled class="btn btn-neutral">Neutral</button>
+        </div>
+        <div class="gf-row buttons">
+          <button disabled class="btn btn-outlined">Outlined</button>
+          <button disabled class="btn btn-outlined-neutral">Neutral Outlined</button>
+          <button disabled class="btn btn-outlined-warn">Warning Outlined</button>
+          <button disabled class="btn btn-outlined-approve">Approval Outlined</button>
+        </div><pre><code class="lang-html">  &lt;button class=&#39;btn&#39; disabled&gt;Default&lt;/button&gt;
+  &lt;button class=&#39;btn btn-approve&#39; disabled&gt;Approval&lt;/button&gt;
+  &lt;a class=&#39;btn btn-warn btn-disabled&#39;&gt;Warning&lt;/a&gt;
+  &lt;button class=&#39;btn btn-neutral&#39; disabled&gt;Neutral&lt;/button&gt;
+  &lt;button class=&#39;btn btn-outlined&#39; disabled&gt;Outlined Button&lt;/button&gt;
+  &lt;button class=&#39;btn btn-outlined-neutral&#39; disabled&gt;Neutral Outlined Button&lt;/button&gt;
+  &lt;button class=&#39;btn btn-outlined-warn&#39; disabled&gt;Warning Outlined Button&lt;/button&gt;
+  &lt;button class=&#39;btn btn-outlined-approve&#39; disabled&gt;Approval Outlined Button&lt;/button&gt;
+</code></pre>
+
+        <h3>Button groups</h3>
+        <p>To create a button group place any number of button elements in <code>btn-group</code> container.</p>
+        <div class="btn-group"><a href="" class="btn">Button</a><a href="" class="btn">Button</a><a href="" class="btn">Button</a></div>
+        <div class="btn-group"><a href="" class="btn btn-neutral">Button</a><a href="" class="btn btn-neutral">Button</a><a href="" class="btn btn-neutral">Button</a></div>
+        <div class="btn-group"><a href="" class="btn btn-outlined">Button</a><a href="" class="btn btn-outlined">Button</a><a href="" class="btn btn-outlined">Button</a></div>
+      </section>
+      <section id="forms">
+        <h2>Forms</h2>
+        <form>
+          <fieldset>
+            <legend>Comment Form</legend>
+            <div class="form-element">
+              <label for="username">Username</label>
+              <input type="text" id="username" placeholder="Your username" class="form-input">
+            </div>
+            <div class="form-element">
+              <label for="comment">Write a comment</label>
+              <textarea id="comment" placeholder="This is a sample message" class="form-input"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send</button>
+          </fieldset>
+        </form><pre><code class="lang-html">  &lt;form&gt;
+    &lt;fieldset&gt;
+      &lt;legend&gt;Comment Form&lt;/legend&gt;
+
+      &lt;div class=&#39;form-element&#39;&gt;
+        &lt;label for=&#39;username&#39;&gt;Username&lt;/label&gt;
+        &lt;input type=&#39;text&#39; id=&#39;username&#39; placeholder=&#39;Your username&#39; class=&#39;form-input&#39;&gt;
+      &lt;/div&gt;
+
+      &lt;div class=&#39;form-element&#39;&gt;
+        &lt;label for=&#39;comment&#39;&gt;Write a comment&lt;/label&gt;
+        &lt;textarea id=&#39;comment&#39; class=&#39;form-input&#39; placeholder=&#39;This is a sample message&#39;&gt;&lt;/textarea&gt;
+      &lt;/div&gt;
+
+      &lt;button type=&#39;submit&#39; class=&#39;btn btn-primary&#39;&gt;Send&lt;/button&gt;
+
+    &lt;/fieldset&gt;
+  &lt;/form&gt;
+</code></pre>
+
+        <p>Use <code>form-inline</code> class for inline form elements (works on desktop resolutions).</p>
+        <form class="form-inline">
+          <fieldset>
+            <div class="form-element">
+              <label for="username">Username</label>
+              <input type="text" id="username" placeholder="Your username" class="form-input">
+            </div>
+            <div class="form-element">
+              <label for="password">Password</label>
+              <input type="text" id="password" placeholder="Your password" class="form-input">
+            </div>
+            <button type="submit" class="btn btn-primary">Send</button>
+          </fieldset>
+        </form>
+        <p>If not using labels in an inline form add <code>form-no-labels</code> to form element.</p>
+        <form class="form-inline form-no-labels">
+          <fieldset>
+            <div class="form-element">
+              <input type="text" id="username" placeholder="Your username" class="form-input">
+            </div>
+            <div class="form-element">
+              <button type="submit" class="btn btn-outlined">Send</button>
+            </div>
+          </fieldset>
+        </form><pre><code class="lang-html">  &lt;form class=&#39;form-inline&#39;&gt;
+    &lt;fieldset&gt;
+      &lt;div class=&#39;form-element&#39;&gt;
+        &lt;label for=&#39;username&#39;&gt;Username&lt;/label&gt;
+        &lt;input type=&#39;text&#39; id=&#39;username&#39; placeholder=&#39;Your username&#39; class=&#39;form-input&#39;&gt;
+      &lt;/div&gt;
+
+      &lt;div class=&#39;form-element&#39;&gt;
+        &lt;label for=&#39;password&#39;&gt;Password&lt;/label&gt;
+        &lt;input type=&#39;text&#39; id=&#39;password&#39; placeholder=&#39;Your password&#39; class=&#39;form-input&#39;&gt;
+      &lt;/div&gt;
+
+      &lt;button type=&#39;submit&#39; class=&#39;btn btn-primary&#39;&gt;Send&lt;/button&gt;
+    &lt;/fieldset&gt;
+  &lt;/form&gt;
+</code></pre>
+
+        <h3>Required inputs</h3>
+        <p>To denotate that filling an input is mandatory add <code>required</code> attribute to an <code>input</code>, <code>textarea</code> or <code>select</code>.</p>
+        <input type="text" placeholder="This input is required" required class="form-input"><pre><code class="lang-html">  &lt;input type=&#39;text&#39; class=&#39;form-input form-element&#39; placeholder=&#39;This input is required&#39; required&gt;
+</code></pre>
+
+        <h3>Disabled inputs</h3>
+        <p>You can disable the following elements <code>input</code>, <code>select</code>, <code>textarea</code> and <code>button</code> by adding the <code>disabled</code> attribute.</p>
+        <input type="text" placeholder="This input is disabled" disabled class="form-input"><pre><code class="lang-html">  &lt;input type=&#39;text&#39; class=&#39;form-input&#39; placeholder=&#39;This input is disabled&#39; disabled&gt;
+</code></pre>
+
+        <h3>Input validity</h3>
+        <p>Use <code>input-invalid</code> and <code>input-valid</code> classes for error and success states respectively.</p>
+        <input type="text" value="@anyet" class="form-input input-invalid">
+        <input type="text" value="Philip Roberts" class="form-input input-valid "><pre><code class="lang-html">  &lt;input type=&#39;text&#39; value=&#39;@anyet&#39; class=&#39;form-input form-element input-invalid&#39;&gt;
+  &lt;input type=&#39;text&#39; value=&#39;Philip Roberts&#39; class=&#39;form-input form-element input-valid&#39;&gt;
+</code></pre>
+
+        <h3>Other form elements</h3>
+        <p>Remember about wrapping both checkboxes and radio buttons in labels with <code>input-radio</code> and <code>input-checkbox</code> class.</p>
+        <form>
+          <fieldset>
+            <input type="file" class="form-input form-element">
+            <label class="disabled input-checkbox form-element">
+              <input type="checkbox" disabled>This is a disabled checkbox
+            </label>
+            <label class="input-radio form-element">
+              <input type="radio">This is a radio button
+            </label>
+            <select class="form-element">
+              <option>Option One</option>
+            </select>
+          </fieldset>
+        </form><pre><code class="lang-html">  &lt;form&gt;
+    &lt;fieldset&gt;
+      &lt;input type=&#39;file&#39; class=&#39;form-input form-element&#39;&gt;
+
+      &lt;label for=&#39;checkbox&#39; class=&#39;disabled input-checkbox form-element&#39;&gt;
+        &lt;input type=&#39;checkbox&#39; disabled&gt;
+        This is a disabled checkbox
+      &lt;/label&gt;
+
+      &lt;label for=&#39;radio&#39; class=&#39;input-radio form-element&#39;&gt;
+        &lt;input type=&#39;radio&#39;&gt;
+        This is a radio button
+      &lt;/label&gt;
+
+      &lt;select class=&#39;form-element&#39;&gt;
+        &lt;option&gt;Option one&lt;/option&gt;
+      &lt;/select&gt;
+
+    &lt;/fieldset&gt;
+  &lt;/form&gt;
+</code></pre>
+
+      </section>
+      <section id="messages">
+        <h2>Messages</h2>
+        <p>There are four types of messages&mdash;default (no class), alert (<code>msg-alert</code>), error (<code>msg-error</code>) and success (<code>msg-success</code>).</p>
+        <div class="msg">
+          <p>This is a message. <a>This is a link.</a></p>
+        </div>
+        <div class="msg msg-error">
+          <p>This is an error. <a>This is a link.</a></p>
+        </div>
+        <div class="msg msg-alert">
+          <p>This is an alert. <a>This is a link.</a></p>
+        </div>
+        <div class="msg msg-success">
+          <p>This is a success message. <a>This is a link.</a></p>
+        </div><pre><code class="lang-html">  &lt;div class=&#39;message&#39;&gt;
+    &lt;p&gt;This is a message. &lt;a&gt;This is a link.&lt;/a&gt;&lt;/p&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&#39;msg msg-error&#39;&gt;
+    &lt;p&gt;This is an error. &lt;a&gt;This is a link.&lt;/a&gt;&lt;/p&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&#39;msg msg-alert&#39;&gt;
+    &lt;p&gt;This is an alert. &lt;a&gt;This is a link.&lt;/a&gt;&lt;/p&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&#39;msg msg-success&#39;&gt;
+    &lt;p&gt;This is a success message. &lt;a&gt;This is a link.&lt;/a&gt;&lt;/p&gt;
+  &lt;/div&gt;
+</code></pre>
+
+        <h3>Dismissable messages</h3>
+        <p>Messages that can be dismissed should have <code>msg-dismissable</code> class and a link with <code>close</code> class.</p>
+        <div class="msg msg-error msg-dismissable">
+          <p>This is an error that can be dismissed.</p><a title="Close" class="close">×</a>
+        </div>
+        <div class="msg msg-alert msg-dismissable">
+          <p>This is an alert that can be dismissed.</p><a title="Close" class="close">×</a>
+        </div>
+        <div class="msg msg-success msg-dismissable">
+          <p>This is a success message that can be dismissed.</p><a title="Close" class="close">×</a>
+        </div><pre><code class="lang-html">  &lt;div class=&#39;msg msg-error msg-dismissable&#39;&gt;
+    &lt;p&gt;This is an error that can be dismissed.&lt;/p&gt;
+    &lt;a class=&#39;close&#39; title=&#39;close&#39;&gt;×&lt;/a&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&#39;msg msg-alert msg-dismissable&#39;&gt;
+    &lt;p&gt;This is an alert that can be dismissed.&lt;/p&gt;
+    &lt;a class=&#39;close&#39; title=&#39;close&#39;&gt;×&lt;/a&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&#39;msg msg-success msg-dismissable&#39;&gt;
+    &lt;p&gt;This is a success message that can be dismissed.&lt;/p&gt;
+    &lt;a class=&#39;close&#39; title=&#39;close&#39;&gt;×&lt;/a&gt;
+  &lt;/div&gt;
+</code></pre>
+
+        <h3>Full width messages</h3>
+        <p>Add <code>msg-full-width</code> class for message with centered text.</p>
+        <div class="msg msg-success msg-full-width msg-dismissable">
+          <p>This is a full width success message that can be dismissed.</p><a title="Close" class="close">×</a>
+        </div><pre><code class="lang-html">  &lt;div class=&#39;msg msg-success msg-dismissable msg-full-width&#39;&gt;
+    &lt;p&gt;This is a full width success message that can be dismissed.&lt;/p&gt;
+    &lt;a class=&#39;close&#39; title=&#39;close&#39;&gt;×&lt;/a&gt;
+  &lt;/div&gt;
+</code></pre>
+
+        <h3>Message positioning</h3>
+        <p>Messages can be easily positioned using following classes: <code>msg-below</code> and <code>msg-above</code>&mdash;where these classes denotate position of the message relatively to the element.</p>
+        <form role="form">
+          <input type="text" placeholder="Your Name" class="form-input">
+          <div class="msg msg-below">
+            <p>This is a message appearing below an element.</p>
+          </div>
+          <div class="msg msg-success msg-above">
+            <p>This is a message appearing above an element.</p>
+          </div>
+          <input type="text" placeholder="Your Surname" class="form-input">
+        </form><pre><code class="lang-html">  &lt;div class=&#39;msg msg-below&#39;&gt;
+    &lt;p&gt;This is a message appearing below an element.&lt;/p&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&#39;msg msg-success msg-above&#39;&gt;
+    &lt;p&gt;This is a message appearing above an element.&lt;/p&gt;
+  &lt;/div&gt;
+</code></pre>
+
+      </section>
+      <section id="tables">
+        <h2>Tables</h2>
+        <p>When using tables remember about appropriate content grouping with <code>thead</code> and <code>tbody</code>.</p>
+        <div class="table-responsive">
+          <table>
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Surname</th>
+                <th>Email</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Adam</td>
+                <td>Brault</td>
+                <td><a>adam@andyet.com</a></td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Lynn</td>
+                <td>Fisher</td>
+                <td><a>lynn@andyet.com</a></td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Adam</td>
+                <td>Baldwin</td>
+                <td><a>baldwin@andyet.com</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div><pre><code class="lang-html">  &lt;table&gt;
+    &lt;thead&gt;
+      &lt;tr&gt;
+        &lt;th&gt;#&lt;/th&gt;
+        &lt;th&gt;Name&lt;/th&gt;
+        &lt;th&gt;Surname&lt;/th&gt;
+        &lt;th&gt;Email&lt;/th&gt;
+      &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td&gt;1&lt;/td&gt;
+        &lt;td&gt;Adam&lt;/td&gt;
+        &lt;td&gt;Brault&lt;/td&gt;
+        &lt;td&gt;adam@andyet.com&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;2&lt;/td&gt;
+        &lt;td&gt;Lynn&lt;/td&gt;
+        &lt;td&gt;Fisher&lt;/td&gt;
+        &lt;td&gt;lynn@andyet.com&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;3&lt;/td&gt;
+        &lt;td&gt;Adam&lt;/td&gt;
+        &lt;td&gt;Baldwin&lt;/td&gt;
+        &lt;td&gt;baldwin@andyet.com&lt;/td&gt;
+      &lt;/tr&gt;
+    &lt;/tbody&gt;
+  &lt;/table&gt;
+</code></pre>
+
+        <h3>Outlined tables</h3>
+        <p>Use <code>table-outlined</code> class for additional border around the <code>table</code>. For hover effects on rows add <code>table-with-hover</code>.</p>
+        <div class="table-responsive">
+          <table class="table-outlined table-with-hover">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Surname</th>
+                <th>Email</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Adam</td>
+                <td>Brault</td>
+                <td><a>adam@andyet.com</a></td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Lynn</td>
+                <td>Fisher</td>
+                <td><a>lynn@andyet.com</a></td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Adam</td>
+                <td>Baldwin</td>
+                <td><a>baldwin@andyet.com</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <h3>Striped table</h3>
+        <p>For odd striped rows add <code>table-striped</code> class.</p>
+        <div class="table-responsive">
+          <table class="table-striped">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Surname</th>
+                <th>Email</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Adam</td>
+                <td>Brault</td>
+                <td><a>adam@andyet.com</a></td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Lynn</td>
+                <td>Fisher</td>
+                <td><a>lynn@andyet.com</a></td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Adam</td>
+                <td>Baldwin</td>
+                <td><a>baldwin@andyet.com</a></td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>Amy</td>
+                <td>Lynn Taylor</td>
+                <td><a>amy@andyet.com</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <h3>Table with error states</h3>
+        <p>To add validation states to table rows use <code>table-cell-success</code>, <code>table-cell-alert</code> and <code>table-cell-error</code> respectively.</p>
+        <div class="table-responsive">
+          <table>
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Surname</th>
+                <th>Email</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="table-cell-success">
+                <td>1</td>
+                <td>Adam</td>
+                <td>Brault</td>
+                <td><a>adam@andyet.com</a></td>
+              </tr>
+              <tr class="table-cell-alert">
+                <td>2</td>
+                <td>Lynn</td>
+                <td>Fisher</td>
+                <td><a>lynn@andyet.com</a></td>
+              </tr>
+              <tr class="table-cell-error">
+                <td>3</td>
+                <td>Adam</td>
+                <td>Baldwin</td>
+                <td><a>baldwin@andyet.com</a></td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>Amy</td>
+                <td>Lynn Taylor</td>
+                <td><a>amy@andyet.com</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <section id="colors">
+        <h2>Colors</h2>
+        <h3>Pinks</h3>
+        <ul class="cf list-unstyled list-inline">
+          <li class="color pink1">$pink</li>
+          <li class="color pink2">$pink-light</li>
+          <li class="color pink3">$pink-lighter</li>
+        </ul>
+        <h3>Reds</h3>
+        <ul class="cf list-unstyled list-inline">
+          <li class="color red1">$red</li>
+          <li class="color red2">$red-light</li>
+          <li class="color red3">$red-lighter</li>
+        </ul>
+        <h3>Oranges</h3>
+        <ul class="cf list-unstyled list-inline">
+          <li class="color orange1">$orange</li>
+          <li class="color orange2">$orange-light</li>
+          <li class="color orange3">$orange-lighter</li>
+        </ul>
+        <h3>Greens</h3>
+        <ul class="cf list-unstyled list-inline">
+          <li class="color green1">$green</li>
+          <li class="color green2">$green-light</li>
+          <li class="color green3">$green-lighter</li>
+        </ul>
+        <h3>Blues</h3>
+        <ul class="cf list-unstyled list-inline">
+          <li class="color blue6">$blue</li>
+          <li class="color blue7">$blue-light</li>
+          <li class="color blue8">$blue-lighter</li>
+        </ul>
+        <h3>Monochromatic</h3>
+        <ul class="cf list-unstyled list-inline">
+          <li class="color gray1">$gray-darker</li>
+          <li class="color gray2">$gray-dark</li>
+          <li class="color gray3">$gray</li>
+          <li class="color gray4">$gray-light</li>
+          <li class="color gray5">$gray-lighter</li>
+        </ul>
+        <ul class="cf list-unstyled list-inline">
+          <li class="color blue1">$blue-saturated-darker</li>
+          <li class="color blue2">$blue-saturated-dark</li>
+          <li class="color blue3">$blue-saturated</li>
+          <li class="color blue4">$blue-saturated-light</li>
+          <li class="color blue5">$blue-saturated-lighter</li>
+        </ul>
+      </section>
+      <section id="navigation">
+        <h2>Navigation</h2>
+        <h3>Top bars</h3>
+        <p>For navigation bars use <code>top-nav</code> class with desired color variation (<code>top-nav-dark</code> or <code>top-nav-dark-blue</code> or <code>top-nav-light</code> ).</p>
+        <nav role="navigation" class="top-nav top-nav-dark cf">
+          <input id="menu-toggle-1" type="checkbox" class="menu-toggle">
+          <label for="menu-toggle-1">Menu</label>
+          <ul class="list-unstyled list-inline cf">
+            <li><a href="">Link one</a></li>
+            <li><a href="">Link two</a></li>
+            <li class="has-dropdown"><a href="" class="active">Link three</a>
+              <div class="icon-arrow-down"></div>
+              <ul class="list-unstyled dropdown cf">
+                <li><a href="">Sublink one</a></li>
+                <li><a href="">Sublink two</a></li>
+                <li><a href="">Sublink three</a></li>
+                <li><a href="">Sublink four</a></li>
+                <li><a href="">Sublink five</a></li>
+              </ul>
+            </li>
+            <li><a href="">Link four</a></li>
+          </ul>
+        </nav>
+        <nav role="navigation" class="top-nav top-nav-dark-blue cf">
+          <input id="menu-toggle-1" type="checkbox" class="menu-toggle">
+          <label for="menu-toggle-1">Menu</label>
+          <ul class="list-unstyled list-inline cf">
+            <li><a href="">Link one</a></li>
+            <li><a href="">Link two</a></li>
+            <li class="has-dropdown"><a href="" class="active">Link three</a>
+              <div class="icon-arrow-down"></div>
+              <ul class="list-unstyled dropdown cf">
+                <li><a href="">Sublink one</a></li>
+                <li><a href="">Sublink two</a></li>
+                <li><a href="">Sublink three</a></li>
+                <li><a href="">Sublink four</a></li>
+                <li><a href="">Sublink five</a></li>
+              </ul>
+            </li>
+            <li><a href="">Link four</a></li>
+          </ul>
+        </nav>
+        <nav role="navigation" class="top-nav top-nav-light cf">
+          <input id="menu-toggle" type="checkbox" class="menu-toggle">
+          <label for="menu-toggle">Menu</label>
+          <ul class="list-unstyled list-inline cf">
+            <li><a href="">Link one</a></li>
+            <li><a href="">Link two</a></li>
+            <li class="has-dropdown"><a href="" class="active">Link three</a>
+              <div class="icon-arrow-down"></div>
+              <ul class="list-unstyled dropdown cf">
+                <li><a href="">Sublink one</a></li>
+                <li><a href="">Sublink two</a></li>
+                <li><a href="">Sublink three</a></li>
+                <li><a href="">Sublink four</a></li>
+                <li><a href="">Sublink five</a></li>
+              </ul>
+            </li>
+            <li><a href="">Link five</a></li>
+          </ul>
+        </nav><pre><code class="lang-html">  &lt;nav class=&#39;top-nav top-nav-light cf&#39; role=&#39;navigation&#39;&gt;
+    &lt;input id=&#39;menu-toggle&#39; class=&#39;menu-toggle&#39; type=&#39;checkbox&#39;&gt;
+    &lt;label for=&#39;menu-toggle&#39;&gt;Menu&lt;/label&gt;
+
+    &lt;ul class=&#39;list-unstyled list-inline cf&#39;&gt;
+      &lt;li&gt;&lt;a&gt;Link One&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a&gt;Link Two&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a&gt;Link Three&lt;/a&gt;&lt;/li&gt;
+      &lt;li class=&#39;has-dropdown&#39;&gt;
+        &lt;a class=&#39;active&#39;&gt;Link Four&lt;/a&gt;
+        &lt;div class=&#39;icon-arrow-down&#39;&gt;&lt;/div&gt;
+        &lt;ul class=&#39;list-unstyled dropdown cf&#39;&gt;
+          &lt;li&gt;&lt;a&gt;Sublink One&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a&gt;Sublink Two&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a&gt;Sublink Three&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a&gt;Sublink Four&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a&gt;Sublink Five&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a&gt;Sublink Six&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;a&gt;Link Five&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/nav&gt;
+</code></pre>
+
+        <h3>Breadcrumbs</h3>
+        <p>For indicating users location in complex sites or applications use breadcrumbs.</p>
+        <nav role="navigation">
+          <ul class="list-unstyled list-inline breadcrumbs">
+            <li><a href="">Page One</a>›</li>
+            <li><a href="">Page Two</a>›</li>
+            <li><a class="unavailable-item">Unavailable Page</a>›</li>
+            <li><a href="" class="current-item">Current Page</a></li>
+          </ul>
+        </nav><pre><code class="lang-html">  &lt;nav role=&#39;navigation&#39;&gt;
+    &lt;ul class=&#39;list-unstyled list-inline breadcrumbs&#39;&gt;
+      &lt;li&gt;&lt;a&gt;Page One&lt;/a&gt;›&lt;/li&gt;
+      &lt;li&gt;&lt;a&gt;Page Two&lt;/a&gt;›&lt;/li&gt;
+      &lt;li&gt;&lt;a class=&#39;unavailable-item&#39;&gt;Unavailable Page&lt;/a&gt;›&lt;/li&gt;
+      &lt;li&gt;&lt;a class=&#39;current-item&#39;&gt;Current Page&lt;/a&gt;›&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/nav&gt;
+</code></pre>
+
+        <h3>Pagination</h3>
+        <p>To indicate content spanning over multiple pages use pagination element.</p>
+        <nav role="navigation">
+          <ul class="list-unstyled list-inline pagination">
+            <li><a href=""><em class="icon-arrow-left"></em></a></li>
+            <li><a class="unavailable-item">1</a></li>
+            <li><a href="" class="current-item">2</a></li>
+            <li><a href="">3</a></li>
+            <li><a href="">4</a></li>
+            <li><a href="">5</a></li>
+            <li><a href=""><em class="icon-arrow-right"></em></a></li>
+          </ul>
+        </nav><pre><code class="lang-html">  &lt;nav role=&#39;navigation&#39;&gt;
+    &lt;ul class=&#39;list-unstyled list-inline pagination&#39;&gt;
+      &lt;li&gt;&lt;a&gt;&lt;em class=&#39;icon-arrow-left&#39;&gt;&lt;/em&gt;&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a class=&#39;unavailable-item&#39;&gt;1&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a class=&#39;current-item&#39;&gt;2&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a&gt;3&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a&gt;4&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a&gt;5&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a&gt;&lt;em class=&#39;icon-arrow-right&#39;&gt;&lt;/em&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/nav&gt;
+</code></pre>
+
+        <h3>Tabs</h3>
+        <p>For tabbed content make sure to style the content as well.</p>
+        <nav role="navigation">
+          <ul class="list-unstyled list-inline tabs">
+            <li><a href="">Tab One</a></li>
+            <li><a href="" class="current-item">Tab Two</a></li>
+            <li><a href="">Tab Three</a></li>
+          </ul>
+        </nav><pre><code class="lang-html">  &lt;nav role=&#39;navigation&#39;&gt;
+    &lt;ul class=&#39;list-unstyled list-inline tabs&#39;&gt;
+      &lt;li&gt;&lt;a&gt;Tab One&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a class=&#39;current-item&#39;&gt;Tab Two&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a&gt;Tab Three&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/nav&gt;
+</code></pre>
+
+        <h3>Side Navigation</h3>
+        <p>For simple navigation on the side use <code>side-nav</code> class.</p>
+        <nav role="navigation">
+          <ul class="list-unstyled side-nav">
+            <li><a href="">Option One</a></li>
+            <li><a href="" class="current-item">Option Two</a></li>
+            <li><a href="">Option Three</a></li>
+          </ul>
+        </nav><pre><code class="lang-html">  &lt;nav role=&#39;navigation&#39;&gt;
+    &lt;ul class=&#39;list-unstyled side-nav&#39;&gt;
+      &lt;li&gt;&lt;a&gt;Option One&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a class=&#39;current-item&#39;&gt;Option Two&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a&gt;Option Three&lt;/a&gt;&lt;/li&gt;
+    &lt;ul&gt;
+  &lt;/nav&gt;
+</code></pre>
+
+        <h3>Extras</h3>
+        <p>You can use dropdowns and arrow elements separately from navigation items too.</p>
+        <div class="dropdown-standalone dropdown-outlined"><a class="button-unstyled">Dropdown</a><span class="icon-arrow-down"></span>
+          <ul class="list-unstyled dropdown">
+            <li><a>Item One</a></li>
+            <li><a>Item Two</a></li>
+          </ul>
+        </div>
+        <div class="dropdown-standalone dropdown-neutral"><a class="button-unstyled">Button Dropdown</a><span class="icon-arrow-down"></span>
+          <ul class="list-unstyled dropdown">
+            <li><a>Item One</a></li>
+            <li><a>Item Two</a></li>
+          </ul>
+        </div>
+        <div class="dropdown-standalone dropdown-coloured"><a class="button-unstyled">Button Dropdown</a><span class="icon-arrow-down"></span>
+          <ul class="list-unstyled dropdown">
+            <li><a>Item One</a></li>
+            <li><a>Item Two</a></li>
+          </ul>
+        </div><pre><code class="lang-html">  &lt;div class=&#39;dropdown-standalone dropdown-outlined&#39;&gt;
+    &lt;a class=&#39;button-unstyled&#39;&gt;Dropdown&lt;/a&gt;
+    &lt;span class=&#39;icon-arrow-down&#39;&gt;&lt;/span&gt;
+    &lt;ul class=&#39;list-unstyled dropdown&#39;&gt;
+      &lt;li&gt;Item One&lt;/li&gt;
+      &lt;li&gt;Item Two&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&#39;dropdown-standalone button dropdown-outlined&#39;&gt;
+    &lt;a class=&#39;button-unstyled&#39;&gt;Button Dropdown&lt;/a&gt;
+    &lt;span class=&#39;icon-arrow-down&#39;&gt;&lt;/span&gt;
+    &lt;ul class=&#39;list-unstyled dropdown&#39;&gt;
+      &lt;li&gt;Item One&lt;/li&gt;
+      &lt;li&gt;Item Two&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&#39;dropdown-standalone dropdown-coloured&#39;&gt;
+    &lt;a class=&#39;button-unstyled&#39;&gt;Button Dropdown&lt;/a&gt;
+    &lt;span class=&#39;icon-arrow-down&#39;&gt;&lt;/span&gt;
+    &lt;ul class=&#39;list-unstyled dropdown&#39;&gt;
+      &lt;li&gt;Item One&lt;/li&gt;
+      &lt;li&gt;Item Two&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+</code></pre>
+<span class="icon-arrow-down icon-sample"></span><span class="icon-arrow-up icon-sample"></span><span class="icon-arrow-left icon-sample"></span><span class="icon-arrow-right icon-sample"></span><pre><code class="lang-html">  &lt;span class=&#39;icon-arrow-down&#39;&gt;&lt;/span&gt;
+  &lt;span class=&#39;icon-arrow-up&#39;&gt;&lt;/span&gt;
+  &lt;span class=&#39;icon-arrow-left&#39;&gt;&lt;/span&gt;
+  &lt;span class=&#39;icon-arrow-right&#39;&gt;&lt;/span&gt;
+</code></pre>
+
+      </section>
+      <section id="code">
+        <h2>Code</h2>
+        <p>Yeti.css includes basic styles for including code snippets in both inline and block manner.</p>
+        <p>This is an <code class='code-light'>light inline code</code> example. This an <code class='code-dark'>dark inline code</code> example.</p><pre><code class="lang-html">  &lt;p&gt;This is an &lt;code class=&#39;code-light&#39;&gt;light inline code&lt;/code&gt; example. This an &lt;code class=&#39;code-dark&#39;&gt;dark inline code&lt;/code&gt; example.
+</code></pre>
+<pre><code class="lang-html">  &lt;pre&gt;
+    &lt;code&gt;
+      ...
+    &lt;/code&gt;
+  &lt;/pre&gt;
+</code></pre>
+
+        <p>For light and dark themes for syntax coloring refer to <a href='https://github.com/thefoxis/andlight'>&light</a> repository.</p>
+      </section>
+      <section id="media" class="media">
+        <h2>Media</h2>
+        <p>Media elements, such as pictures, videos or iframes have a maximum width of <code>100%</code> so they never overflow the parent container.</p>
+        <h3>Images with captions</h3>
+        <p>For images with a caption use <code>figure</code> and <code>figcaption</code> element.</p>
+        <figure><img src="http://placehold.it/700x300?text=350x300" width="300">
+          <figcaption>Image description</figcaption>
+        </figure><pre><code class="lang-html">  &lt;figure&gt;
+    &lt;img src=&#39;http://placehold.it/700x300?text=350x300&#39; /&gt;
+    &lt;figcaption&gt;Image description&lt;/figcaption&gt;
+  &lt;/figure&gt;
+</code></pre>
+
+        <h3>Media with an outline</h3>
+        <p>Having an outline around any type of media can be added by using <code>media-outlined</code> class.</p>
+        <figure class="media-outlined"><img src="http://placehold.it/700x300?text=350x300" width="300"></figure><pre><code class="lang-html">  &lt;figure class=&#39;media-outlined&#39;&gt;
+    &lt;img src=&#39;http://placehold.it/700x300?text=350x300&#39; /&gt;
+  &lt;/figure&gt;
+</code></pre>
+
+        <h3>Multiple images</h3>
+        <p>Multiple images should be placed in one <code>figure</code> element.</p>
+        <figure><img src="http://placehold.it/400x400?text=200x200" width="200"><img src="http://placehold.it/400x400?text=200x200" width="200"><img src="http://placehold.it/400x400?text=200x200" width="200"></figure><pre><code class="lang-html">  &lt;figure&gt;
+    &lt;img src=&#39;http://placehold.it/400x400?text=200x200&#39;/&gt;
+    &lt;img src=&#39;http://placehold.it/400x400?text=200x200&#39; /&gt;
+    &lt;img src=&#39;http://placehold.it/400x400?text=200x200&#39; /&gt;
+  &lt;/figure&gt;
+</code></pre>
+
+      </section>
+      <section id="modals">
+        <h2>Modals</h2>
+        <p>Create a basic modal by using <code>modal</code> class and trigger it in JavaScript. All modal types are responsive (not demonstrated in this demo).</p>
+        <div class="modal-sample">
+          <div class="modal">
+            <div class="modal-head cf">
+              <h3 class="modal-title">This is a modal</h3><a href="" class="modal-close">×</a>
+            </div>
+            <div class="modal-body">
+              <p>This is its body.</p>
+            </div>
+            <div class="modal-footer">
+              <button class="button">Okay</button>
+            </div>
+          </div>
+        </div><pre><code class="lang-html">  &lt;div class=&#39;modal&#39;&gt;
+    &lt;div class=&#39;modal-head cf&#39;&gt;
+      &lt;h3 class=&#39;modal-title&#39;&gt;This is a modal&lt;/h3&gt;
+      &lt;a href=&#39;&#39; class=&#39;modal-close&#39;&gt;×&lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div class=&#39;modal-body&#39;&gt;
+      &lt;p&gt;This is its body&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&#39;modal-footer&#39;&gt;
+      &lt;button class=&#39;button&#39;&gt;Okay&lt;/button&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+</code></pre>
+
+        <h3>Modals with no sectioning</h3>
+        <p>For plain modal with no sectioning use <code>modal-no-sections</code> class and simplified markup.</p>
+        <div class="modal-sample">
+          <div class="modal modal-no-sections">
+            <p>This is a simple modal.</p>
+            <button class="button">Okay</button>
+          </div>
+        </div><pre><code class="lang-html">  &lt;div class=&#39;modal modal-no-sections&#39;&gt;
+    &lt;p&gt;This is a simple modal.&lt;/p&gt;
+    &lt;button class=&#39;button&#39;&gt;Okay&lt;/button&gt;
+  &lt;/div&gt;
+</code></pre>
+
+        <h3>Overlay</h3>
+        <p>For semi-transparent overlay add <code>has-modal</code> class to the <code>body</code> element or a <code>div</code> with <code>overlay</code> class. Overlay appearance is pictured in modal examples above.</p>
+      </section>
+    </div>
+    <footer role="contentinfo">
+      <div class="container">
+        <nav role="navigation">
+          <ul class="list-unstyled list-inline">
+            <li><a href="">link</a></li>
+            <li>some text</li>
+            <li><a href="">link</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+    <div class="pin-top-btn"><a href="#top" class="btn btn-outlined btn-small">top</a></div>
+    <script src="../js/highlight.pack.js"></script>
+    <script>
+      hljs.configure({
+        tabReplace: '  ',
+        classPrefix: ''
+      });
+      hljs.initHighlightingOnLoad();
+    </script>
+  </body>
+</html>

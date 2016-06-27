@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <link href="css/main.css" rel="stylesheet">
+    <title>yeti-sans forms</title>
+  </head>
+  <body>
+    <div class="container">
+      <section id="forms">
+        <h2>Login example</h2>
+        <div class="gf-row">
+          <div class="gf-cell"></div>
+          <div class="gf-cell w50">
+            <form>
+              <fieldset>
+                <legend>Login</legend>
+                <label for="username">Username</label>
+                <input type="text" id="username" placeholder="name@host.com" class="form-input">
+                <label for="password">Password</label>
+                <input type="text" id="username" placeholder="" class="form-input">
+                <label class="input-checkbox form-element pull-right">
+                  <input type="checkbox" id="rememberme">Remember me
+                </label>
+                <button type="submit" class="btn btn-primary">Send</button>
+              </fieldset>
+            </form>
+          </div>
+          <div class="gf-cell"></div>
+        </div>
+        <h2>Order form example</h2>
+        <form>
+          <fieldset>
+            <legend>Order</legend>
+            <div class="gf-row">
+              <div class="gf-cell">
+                <label for="product_name">Product name</label>
+                <input type="text" id="product_name" class="form-input">
+              </div>
+              <div class="gf-cell">
+                <label for="quantity">Quantity</label>
+                <input type="text" id="quantity" class="form-input">
+              </div>
+            </div>
+            <div class="gf-row">
+              <div class="gf-cell w25">
+                <div class="form-inline">
+                  <label class="input-radio form-element">
+                    <input type="radio" name="payment" value="cash">Cash
+                  </label>
+                  <label class="input-radio form-element">
+                    <input type="radio" name="payment" value="card">Card
+                  </label>
+                </div>
+              </div>
+              <div class="gf-cell w25">
+                <select class="form-element">
+                  <option>Type 1</option>
+                  <option>Type 2</option>
+                  <option>Type 3</option>
+                </select>
+              </div>
+            </div>
+          </fieldset>
+        </form>
+      </section>
+      <footer role="contentinfo">
+        <ul class="list-unstyled list-inline">
+          <li><a href="#">Footer</a></li>
+        </ul>
+      </footer>
+    </div>
+  </body>
+</html>
