@@ -1,0 +1,107 @@
+section#messages
+  h2 Messages
+  p There are four types of messages&mdash;default (no class), alert (<code>msg-alert</code>), error (<code>msg-error</code>) and success (<code>msg-success</code>).
+
+  .msg
+    p This is a message. <a>This is a link.</a>
+
+  .msg.msg-error
+    p This is an error. <a>This is a link.</a>
+
+  .msg.msg-alert
+    p This is an alert. <a>This is a link.</a>
+
+  .msg.msg-success
+    p This is a success message. <a>This is a link.</a>
+
+  :marked
+    ```html
+      <div class='message'>
+        <p>This is a message. <a>This is a link.</a></p>
+      </div>
+
+      <div class='msg msg-error'>
+        <p>This is an error. <a>This is a link.</a></p>
+      </div>
+
+      <div class='msg msg-alert'>
+        <p>This is an alert. <a>This is a link.</a></p>
+      </div>
+
+      <div class='msg msg-success'>
+        <p>This is a success message. <a>This is a link.</a></p>
+      </div>
+    ```
+
+  h3 Dismissable messages
+  p Messages that can be dismissed should have <code>msg-dismissable</code> class and a link with <code>close</code> class.
+
+  .msg.msg-error.msg-dismissable
+    p This is an error that can be dismissed.
+    a(class='close', title='Close') ×
+
+  .msg.msg-alert.msg-dismissable
+    p This is an alert that can be dismissed.
+    a(class='close', title='Close') ×
+
+  .msg.msg-success.msg-dismissable
+    p This is a success message that can be dismissed.
+    a(class='close', title='Close') ×
+
+  :marked
+    ```html
+      <div class='msg msg-error msg-dismissable'>
+        <p>This is an error that can be dismissed.</p>
+        <a class='close' title='close'>×</a>
+      </div>
+
+      <div class='msg msg-alert msg-dismissable'>
+        <p>This is an alert that can be dismissed.</p>
+        <a class='close' title='close'>×</a>
+      </div>
+
+      <div class='msg msg-success msg-dismissable'>
+        <p>This is a success message that can be dismissed.</p>
+        <a class='close' title='close'>×</a>
+      </div>
+    ```
+
+  h3 Full width messages
+  p Add <code>msg-full-width</code> class for message with centered text.
+
+  .msg.msg-success.msg-full-width.msg-dismissable
+    p This is a full width success message that can be dismissed.
+    a(class='close', title='Close') ×
+
+  :marked
+    ```html
+      <div class='msg msg-success msg-dismissable msg-full-width'>
+        <p>This is a full width success message that can be dismissed.</p>
+        <a class='close' title='close'>×</a>
+      </div>
+    ```
+
+  h3 Message positioning
+  p Messages can be easily positioned using following classes: <code>msg-below</code> and <code>msg-above</code>&mdash;where these classes denotate position of the message relatively to the element.
+
+
+  form(role='form')
+
+    input(class='form-input', type='text', placeholder='Your Name')
+    .msg.msg-below
+      p This is a message appearing below an element.
+
+    .msg.msg-success.msg-above
+      p This is a message appearing above an element.
+    input(class='form-input', type='text', placeholder='Your Surname')
+
+  :marked
+    ```html
+      <div class='msg msg-below'>
+        <p>This is a message appearing below an element.</p>
+      </div>
+
+      <div class='msg msg-success msg-above'>
+        <p>This is a message appearing above an element.</p>
+      </div>
+    ```

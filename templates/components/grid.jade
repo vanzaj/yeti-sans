@@ -1,0 +1,160 @@
+section#grid
+
+  h2 Grid
+
+  p The starting point to maintaining the document flow is by wrapping the content in a container element that adjusts its width according to resolution:
+
+  :marked
+    ```
+      <div class='container'>
+        <h1>My Website</h1>
+        <p>My content.</p>
+      </div>
+    ```
+
+  p The following container widths and breakpoints are defined in the <a href='https://github.com/andyet/yeticss/blob/gh-pages/lib/yeticss/globals/_variables.styl#L62-L75'>variables file</a>:
+
+  :marked
+    ```
+      $grid-width-full    ?= 100%
+      $grid-width-desktop ?= 70%
+      $grid-width-tablet  ?= 85%
+      $grid-width-mobile  ?= 90%
+
+      $breakpoint-smartphone   ?= 480px
+      $breakpoint-mid-mobile   ?= 600px
+      $breakpoint-tablet       ?= 768px
+      $breakpoint-desktop      ?= 900px
+      $breakpoint-desktop-wide ?= 1200px
+    ```
+
+  p Grid is built on top of <a href='http://css-tricks.com/snippets/css/a-guide-to-flexbox/'>flexbox</a>. Cells (<code>gf-cell</code>) will have the width of <code>100%</code> below <code>481px</code> and automatically calculated width (depending on cell count) above that breakpoint. Grid must be placed within <code>div</code> with <code>container</code> class as described above.
+
+  p. 
+    Instead of relying on calculation of widths depending on number of cells,
+    you can use <code>w25</code>, <code>w33</code>,
+    <code>w50</code>, <code>w75</code> helper classes for 25%, 33%, 50% and 75% of <code>container</code> width.
+    The width of other cells will be calculated automatically by the browser.
+
+  .gf-row
+    .gf-cell.w50.brd
+      p 1/2
+    .gf-cell.brd
+      p 1/2 auto
+
+  .gf-row
+    .gf-cell.brd
+      p auto
+    .gf-cell.w50.brd
+      p 1/2
+
+  .gf-row
+    .gf-cell.brd
+      p 1/3 auto
+    .gf-cell.brd
+      p 1/3 auto
+    .gf-cell.brd
+      p 1/3 auto
+
+  .gf-row
+    .gf-cell.brd
+      p 1/4 auto
+    .gf-cell.brd
+      p 1/4 auto
+    .gf-cell.brd
+      p 1/4 auto
+    .gf-cell.brd
+      p 1/4 auto
+
+  .gf-row
+    .gf-cell.brd
+      p auto
+    .gf-cell.w25.brd
+      p 1/4
+
+  .gf-row
+    .gf-cell.brd
+      p auto
+    .gf-cell.w33.brd
+      p 1/3
+
+  .gf-row
+    .gf-cell.brd
+      p auto
+    aside.w33.brd
+      p 1/3 aside
+
+  :marked
+    ```html
+      <div class='gf-row'>
+        <div class='gf-cell'>
+          <p>1/2</p>
+        </div>
+        <div class='gf-cell'>
+          <p>1/2</p>
+        </div>
+      </div>
+
+      <div class='gf-row'>
+        <div class='gf-cell'>
+          <p>1/3</p>
+        </div>
+        <div class='gf-cell'>
+          <p>1/3</p>
+        </div>
+        <div class='gf-cell'>
+          <p>1/3</p>
+        </div>
+      </div>
+
+      <div class='gf-row'>
+        <div class='gf-cell'>
+          <p>1/4</p>
+        </div>
+        <div class='gf-cell'>
+          <p>1/4</p>
+        </div>
+        <div class='gf-cell'>
+          <p>1/4</p>
+        </div>
+        <div class='gf-cell'>
+          <p>1/4</p>
+        </div>
+      </div>
+
+      <div class='gf-row'>
+        <div class='gf-cell'>
+          <p>auto</p>
+        </div>
+        <div class='gf-cell w25'>
+          <p>1/4</p>
+        </div>
+      </div>
+
+      <div class='gf-row'>
+        <div class='gf-cell'>
+          <p>auto</p>
+        </div>
+        <div class='gf-cell w50'>
+          <p>1/2</p>
+        </div>
+      </div>
+
+      <div class='gf-row'>
+        <div class='gf-cell'>
+          <p>auto</p>
+        </div>
+        <div class='gf-cell w33'>
+          <p>1/3</p>
+        </div>
+      </div>
+    ```
+
+  p For simple, one-column layout use only <code>container</code> element.
+
+  :marked
+    ```html
+      <div class='container'>
+        ...
+      </div>
+    ```

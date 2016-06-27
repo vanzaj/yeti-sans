@@ -1,0 +1,222 @@
+/*--------------------------------------------------------------------
+*
+* $BUTTONS
+*
+--------------------------------------------------------------------*/
+
+.btn
+  display: inline-block
+  border: none
+  border-radius: $border-radius
+  padding: $ui-padding-narrow $ui-padding-default
+  text-align: center
+  cursor: pointer
+  background-color: $blue
+
+  transition-delay: 0
+  transition-duration: .3s
+  transition-timing-function: ease-in
+  transition-property: background, border-color
+  user-select: none
+  appearance: none
+
+  &:not([class*='btn-outlined'])
+    padding-top: $ui-padding-default
+    padding-bottom: $ui-padding-default
+
+  &:hover
+    background-color: darken($blue, 15%)
+
+  &:disabled,
+  .btn-disabled
+    background-color: $blue-light
+    cursor: not-allowed
+
+  &:focus
+    outline: none
+
+.btn,
+.btn:hover
+  color: white
+
+//- Button Sizing
+
+.btn-small
+  padding: ceil($ui-padding-narrow/2) $ui-padding-narrow
+  font-size: $font-small
+
+.btn-large
+  padding: $ui-padding-spaced $ui-padding-extra-spaced
+  font-size: $font-large
+
+//- Button Coloring
+
+.btn-unstyled,
+.btn-unstyled:hover
+  background-color: transparent
+
+.btn-unstyled
+  padding: 0
+  color: $blue
+
+  &:hover
+    color: darken($blue, 20%)
+
+.btn-neutral
+  background-color: $gray-lighter
+
+  &:hover
+    background-color: darken($gray-lighter, 20%)
+
+  &:disabled,
+  .btn-disabled
+    background-color: $gray-lighter
+    color: $gray-light
+
+    &:hover
+      color: $gray-light
+
+.btn-neutral,
+.btn-neutral:hover
+  color: $gray-darker
+
+.btn-approve
+  background-color: $green
+
+  &:hover
+    background-color: darken($green, 20%)
+
+  &:disabled,
+  .btn-disabled
+    background-color: $green-light
+
+.btn-warn
+  background-color: $red
+
+  &:hover
+    background-color: darken($red, 20%)
+
+  &:disabled,
+  &.btn-disabled
+    background-color: $red-light
+
+.btn-caution
+  background-color: transparent
+  color: $red
+  text-decoration: underline
+
+  &:hover
+    background-color: transparent
+    color: darken($red, 20%)
+
+  &:disabled,
+  .btn-disabled
+    color: $gray-light
+
+*[class*='btn-outlined']
+  border-width: 2px
+  border-style: solid
+  padding-top: $ui-padding-default - 2px
+  padding-bottom: $ui-padding-default - 2px
+
+*[class*='btn-outlined'],
+*[class*='btn-outlined']:hover
+*[class*='btn-outlined']:disabled
+  background-color: transparent
+
+.btn-outlined
+  border-color: $blue
+  color: $blue
+
+  &:hover
+    border-color: darken($blue, 20%)
+    color: darken($blue, 20%)
+
+  &:disabled
+    border-color: $blue-light
+    color: $blue-light
+
+.btn-outlined-neutral
+  border-color: $gray-light
+  color: $gray
+
+  &:hover
+    border-color: $gray
+    color: $gray-dark
+
+  &:disabled,
+  &.btn-disabled
+    color: lighten($gray-light, 20%)
+    border-color: $gray-lighter
+
+    &:hover
+      color: lighten($gray-light, 20%)
+
+.btn-outlined-approve
+  border-color: $green
+  color: $green
+
+  &:hover
+    border-color: darken($green, 20%)
+    color: darken($green, 20%)
+
+  &:disabled
+    border-color: $green-light
+    color: $green-light
+
+.btn-outlined-warn
+  border-color: $red
+  color: $red
+
+  &:hover
+    border-color: darken($red, 20%)
+    color: darken($red, 20%)
+
+  &:disabled
+    border-color: $red-light
+    color: $red-light
+
+//- Button Group
+
+.btn-group
+
+  .btn
+    border-radius: 0
+    margin-left: 0
+    border: 1px solid darken($blue, 20%)
+
+    &:first-child,
+    &:first-child:only-child
+      margin: 0
+
+    &:first-child:only-child
+      border-radius: $border-radius
+
+    &:first-child
+      border-radius: $border-radius 0 0 $border-radius
+
+    &:last-child
+      margin-left: -1*$ui-padding-narrow
+      border-radius: 0 $border-radius $border-radius 0
+
+  .btn-neutral,
+  .btn-outlined
+    border: $ui-border
+
+@media screen and (max-width: $breakpoint-smartphone)
+
+  .btn-group
+
+    .btn
+      border-radius: none
+      margin: 0
+      width: 100%
+
+      &:first-of-type
+        border-radius: $border-radius 0 0 $border-radius
+
+      &:last-of-type
+        border-radius: 0 $border-radius $border-radius 0
+
+    .btn:not(:last-of-type)
+      border-bottom: none

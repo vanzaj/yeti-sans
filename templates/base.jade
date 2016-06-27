@@ -1,0 +1,22 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0, maximum-scale=1.0')
+    link(href='../css/main.css', rel='stylesheet')
+    block head
+      title yeti-sans
+
+  body
+    .container
+      block header
+        header(role='banner')
+            h1 Header message
+            p sub header message
+
+      block content
+
+      block footer
+        footer(role='contentinfo')
+          ul.list-unstyled.list-inline
+            li: a(href='#') Footer

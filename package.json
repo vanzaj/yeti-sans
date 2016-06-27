@@ -1,0 +1,16 @@
+{
+  "name": "yeti-sans",
+  "version": "0.1.0",
+  "description": "fork of yeticss",
+  "main": "yeti-sans.js",
+  "author": "vanzaj",
+  "license": "MIT",
+  "dependencies": {
+    "autoprefixer-stylus": "^0.8.0",
+    "cssmin": "^0.4.3",
+    "jade": "^1.11.0",
+    "jstransformer-marked": "^1.0.1",
+    "marked": "^0.3.5",
+    "stylus": "^0.52.4"
+  }
+}

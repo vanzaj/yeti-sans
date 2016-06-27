@@ -1,0 +1,24 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="utf-8")
+    title Page title
+    meta(name="viewport", content="width=device-width, initial-scale=1.0, maximum-scale=1.0")
+
+    link(href="{{url_for('static' filename='css/style.css')}}", rel="stylesheet")
+
+  body
+    header(role="banner")
+      .container
+        h1 Header message
+        p sub header message
+
+    .container
+      block content
+
+    footer(role='contentinfo')
+      .container
+
+        nav(role='navigation')
+          ul.list-unstyled.list-inline
+            li: a(href='#') About

@@ -1,0 +1,71 @@
+/*--------------------------------------------------------------------
+*
+* $GRID
+*
+--------------------------------------------------------------------*/
+
+.container
+  margin: 0 auto
+
+.gf-row
+  padding: 0
+  list-style: none
+  display: flex
+  flex-flow: row wrap
+  -webkit-flex-flow: row wrap
+
+/*
+[class^="gf-cell"]
+  margin-bottom: $space
+*/
+
+.space-top
+  margin-top: $ui-padding-narrow
+
+.space-bot
+  margin-bottom: $ui-padding-narrow
+
+@media screen and (max-width: $breakpoint-mid-mobile)
+
+  .container
+    width: $grid-width-mobile
+
+  [class^="gf-cell"]
+    flex: 0 0 100%
+
+@media screen and (min-width: $breakpoint-mid-mobile+1)
+
+  [class^="gf-cell"]
+    flex: 1
+    //- padding: $ui-padding-spaced 0
+
+  [class^="gf-cell"]:not(:first-child)
+    margin-left: $space
+
+  .w75, .w66, .w50, .w33, .w25
+    flex: none
+
+  .w75
+    width: 75%
+
+  .w66
+    width: ceil(200%/3)
+
+  .w50
+    width: 50%
+
+  .w33
+    width: ceil(100%/3)
+
+  .w25
+    width: 25%
+
+@media screen and (min-width: $breakpoint-smartphone+1) and (max-width: $breakpoint-desktop)
+
+  .container
+    width: $grid-width-tablet
+
+@media screen and (min-width: $breakpoint-desktop+1)
+
+  .container
+    width: $grid-width-desktop

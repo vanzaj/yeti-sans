@@ -1,0 +1,41 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    title yeti-sans
+    meta(name='viewport', content='width=device-width, initial-scale=1.0, maximum-scale=1.0')
+
+    link(href='../css/main.css', rel='stylesheet')
+
+  body
+    header#top(role='banner')
+      .container
+        h1 yeti-sans
+
+    .container
+      block navigation
+
+    .container
+      block content
+
+    footer(role='contentinfo')
+      .container
+
+        nav(role='navigation')
+          ul.list-unstyled.list-inline
+            li
+              a(href='') link
+            li some text
+            li
+              a(href='') link
+
+    .pin-top-btn
+      a.btn.btn-outlined.btn-small(href='#top') top
+
+    script(src='../js/highlight.pack.js')
+    script.
+      hljs.configure({
+        tabReplace: '  ',
+        classPrefix: ''
+      });
+      hljs.initHighlightingOnLoad();

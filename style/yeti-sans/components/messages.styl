@@ -1,0 +1,124 @@
+/*--------------------------------------------------------------------
+*
+* $MESSAGES
+*
+--------------------------------------------------------------------*/
+
+.msg
+  padding: $ui-padding-spaced
+  position: relative
+  background-color: $blue-lighter
+  color: $blue
+
+  a
+    font-weight: bold
+
+  p:last-of-type
+    margin: 0
+
+  &:after
+    border: solid transparent
+    content: ''
+    height: 0
+    width: 0
+    position: absolute
+    pointer-events: none
+    border-color: rgba(255, 255, 255, 0)
+    border-width: 5px
+
+.msg-dismissable 
+  padding-right: $ui-padding-spaced*2
+
+.msg-full-width
+  text-align: center
+
+.msg-above, .msg-below
+
+  &:after      
+    left: 50%
+    margin-left: -6px
+
+//- Message positioned below the parent
+.msg-below
+
+  &:after
+    border-bottom-color: $blue-lighter
+    bottom: 100%
+
+  &.msg-error
+    &:after
+      border-bottom-color: $red-lighter
+
+  &.msg-success
+    &:after
+      border-bottom-color: $green-lighter
+
+  &.msg-alert
+    &:after
+      border-bottom-color: $orange-lighter
+
+//- Message positioned above the parent
+.msg-above
+
+  &:after
+    border-top-color: $blue-lighter
+    top: 100%
+
+  &.msg-error
+    &:after
+      border-top-color: $red-lighter
+
+  &.msg-success
+    &:after
+      border-top-color: $green-lighter
+
+  &.msg-alert
+    &:after
+      border-top-color: $orange-lighter
+
+//- Validation messages
+.msg-error
+  background-color: $red-lighter
+  color: $red
+
+  a
+    color: darken($red, 20%)
+
+    &:hover
+      color: darken($red, 40%)
+
+.msg-alert
+  background-color: $orange-lighter
+  color: $orange
+
+  a
+    color: darken($orange, 20%)
+
+    &:hover
+      color: darken($orange, 40%)
+
+.msg-success
+  background-color: $green-lighter
+  color: $green
+
+  a
+    color: darken($green, 20%)
+
+    &:hover
+      color: darken($green, 40%)
+
+//- Message iconography
+.close
+  display: block
+  position: absolute
+  top: 50%
+  right: 15px
+  margin-top: -15px
+  cursor: pointer
+  font-size: large
+  font-weight: bold
+
+//- Messages in forms
+
+form .msg
+  padding: $ui-padding-default

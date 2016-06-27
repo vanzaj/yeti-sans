@@ -1,0 +1,61 @@
+extends ./base.jade
+block head
+  title yeti-sans forms
+
+block header
+
+block content
+  section#forms
+
+    h2 Login example
+
+    .gf-row
+      .gf-cell
+      .gf-cell.w50
+        form
+          fieldset
+            legend Login
+
+            label(for='username') Username
+            input(type='text', id='username', placeholder='name@host.com', class='form-input')
+
+            label(for='password') Password
+            input(type='text', id='username', placeholder='', class='form-input')
+
+            label.input-checkbox.form-element.pull-right
+              input(type='checkbox', id='rememberme')
+              | Remember me
+
+            button(type='submit', class='btn btn-primary') Send
+      .gf-cell
+
+
+    h2 Order form example
+
+    form
+      fieldset
+        legend Order
+        .gf-row
+          .gf-cell
+            label(for='product_name') Product name
+            input(type='text' id='product_name' class='form-input')
+
+          .gf-cell
+            label(for='quantity') Quantity
+            input(type='text' id='quantity' class='form-input')
+
+        .gf-row
+          .gf-cell.w25
+            .form-inline
+              label.input-radio.form-element
+                input(type='radio' name='payment' value='cash')
+                | Cash
+              label.input-radio.form-element
+                input(type='radio' name='payment' value='card')
+                | Card
+
+          .gf-cell.w25
+              select.form-element
+                option Type 1
+                option Type 2
+                option Type 3

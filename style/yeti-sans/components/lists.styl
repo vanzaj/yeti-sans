@@ -1,0 +1,42 @@
+/*--------------------------------------------------------------------
+*
+* $LISTS
+*
+--------------------------------------------------------------------*/
+
+ul, ol
+  margin: 0 0 $ui-padding-spaced 0
+  padding-left: $ui-padding-spaced
+
+  li > ul,
+  li > ol
+    margin: $ui-padding-narrow 0
+
+  li ul
+    li
+      list-style: square
+
+  li li ul
+    li
+      list-style: circle
+
+ul
+  li
+    list-style: disc
+
+.list-unstyled
+  padding-left: 0
+
+  li
+    list-style: none
+
+.list-inline
+  li
+    display: inline-block
+
+dl
+  dt
+    font-weight: $font-weight-medium
+    color: black
+  dd
+    margin: 0 0 $ui-padding-spaced $ui-padding-default

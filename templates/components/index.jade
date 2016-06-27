@@ -1,0 +1,45 @@
+extends ./base.jade
+
+block navigation
+  nav(class='top-nav top-nav-light cf', role='navigation')
+
+    input(id='menu-toggle', class='menu-toggle', type='checkbox')
+    label(for='menu-toggle') Menu
+
+    ul.list-unstyled.list-inline.cf
+      li
+        a(href='#typography') Typography
+      li
+        a(href='#grid') Grid
+      li
+        a(href='#buttons') Buttons
+      li
+        a(href='#forms') Forms
+      li
+        a(href='#messages') Messages
+      li
+        a(href='#tables') Tables
+      li
+        a(href='#colors') Colors
+      li
+        a(href='#navigation') Navigation
+      li
+        a(href='#code') Code
+      li
+        a(href='#media') Media 
+      li
+        a(href='#modals') Modals
+
+block content
+  include typography
+  include grid
+  include buttons
+  include forms
+  include messages
+  include tables
+  include colors
+  include navigation
+  include code
+  include media
+  include modals
+

@@ -1,0 +1,4 @@
+*.pid
+*.swp
+build/
+node_modules/

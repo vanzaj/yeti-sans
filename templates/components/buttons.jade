@@ -1,0 +1,95 @@
+section#buttons
+
+  h2 Buttons
+  p.
+    Use <code>btn</code> class inside &lt;a&gt; or &lt;button&gt; tags for default button appearance.
+    Add optional <code>btn-xxx</code> classes for customized color variants.
+
+  .gf-row.space-bot.buttons
+    a(class='btn') Default
+    button(class='btn btn-approve') Approve
+    a(class='btn btn-warn') Warning
+    a(class='btn btn-neutral') Neutral
+
+  .gf-row.space-bot.buttons
+    button(class='btn btn-outlined') Default Outlined
+    button(class='btn btn-outlined-approve') Approve Outlined
+    button(class='btn btn-outlined-warn') Warning Outlined
+    button(class='btn btn-outlined-neutral') Neutral Outlined
+
+  .gf-row.buttons
+    button(class='btn btn-unstyled') Unstyled
+    button(class='btn btn-caution') Unstyled Caution
+
+  :marked
+    ```html
+      <a class='btn'>Default</a>
+      <button class='btn btn-approve'>Approve</button>
+      <a class='btn btn-warn'>Warning</a>
+      <a class='btn btn-neutral'>Neutral</a>
+      <a class='btn btn-outlined'>Default Outlined</a>
+      <a class='btn btn-outlined-approval'>Approval Outlined</a>
+      <a class='btn btn-outlined-warn'>Warning Outlined</a>
+      <a class='btn btn-outlined-neutral'>Neutral Outlined</a>
+      <a class='btn btn-unstyled'>Unstyled</a>
+      <a class='btn btn-caution'>Unstyled Caution</a>
+    ```
+
+  h3 Button sizes
+  p Buttons come in three different sizes&mdash;large, regular and small. Use <code>btn-large</code>, no class and <code>btn-small</code> classes respectively.
+
+  a(href='', class='btn btn-large') Large Button
+  a(href='', class='btn') Regular Button
+  a(href='', class='btn btn-small') Small Button
+
+  :marked
+    ```html
+      <a class='btn btn-large'>Large Button</a>
+      <a class='btn'>Regular Button</a>
+      <a class='btn btn-small'>Small Button</a>
+    ```
+
+  h3 Disabled buttons
+  p For disabled (unclickable) apperance use <code>disabled</code> attribute for <code>btn</code> elements and <code>btn-disabled</code> class for links.
+
+  .gf-row.space-bot.buttons
+    button(class='btn', disabled) Default
+    button(class='btn btn-approve', disabled) Approval
+    a(class='btn btn-warn btn-disabled', disabled) Warning
+    button(class='btn btn-neutral', disabled) Neutral
+
+  .gf-row.buttons
+    button(class='btn btn-outlined', disabled) Outlined
+    button(class='btn btn-outlined-neutral', disabled) Neutral Outlined
+    button(class='btn btn-outlined-warn', disabled) Warning Outlined
+    button(class='btn btn-outlined-approve', disabled) Approval Outlined
+
+  :marked
+    ```html
+      <button class='btn' disabled>Default</button>
+      <button class='btn btn-approve' disabled>Approval</button>
+      <a class='btn btn-warn btn-disabled'>Warning</a>
+      <button class='btn btn-neutral' disabled>Neutral</button>
+      <button class='btn btn-outlined' disabled>Outlined Button</button>
+      <button class='btn btn-outlined-neutral' disabled>Neutral Outlined Button</button>
+      <button class='btn btn-outlined-warn' disabled>Warning Outlined Button</button>
+      <button class='btn btn-outlined-approve' disabled>Approval Outlined Button</button>
+    ```
+
+  h3 Button groups
+  p To create a button group place any number of button elements in <code>btn-group</code> container.
+
+  .btn-group
+    a(href='', class='btn') Button
+    a(href='', class='btn') Button
+    a(href='', class='btn') Button
+
+  .btn-group
+    a(href='', class='btn btn-neutral') Button
+    a(href='', class='btn btn-neutral') Button
+    a(href='', class='btn btn-neutral') Button
+
+  .btn-group
+    a(href='', class='btn btn-outlined') Button
+    a(href='', class='btn btn-outlined') Button
+    a(href='', class='btn btn-outlined') Button
