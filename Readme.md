@@ -17,3 +17,4 @@ How to use
 3. open `build/examples`
 4. edit `style/main.styl` or `style/yeti-sans/globals/*` to tweak the style
 
+[yeticss]: http://yeticss.com/
