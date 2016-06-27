@@ -13,8 +13,8 @@ How to use
 
 0. clone or download this repo
 1. `npm install` (to get `stylus` and `jade`)
-2. `make css` or `make examples`
-3. open `build/examples`
+2. `make css` or `make html`
+3. checkout html inside `build/`
 4. edit `style/main.styl` or `style/yeti-sans/globals/*` to tweak the style
 
 [yeticss]: http://yeticss.com/
